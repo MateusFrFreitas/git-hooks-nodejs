@@ -1,23 +1,28 @@
 {
-  "name": "git-hooks-nodejs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MateusFrFreitas/git-hooks-nodejs.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MateusFrFreitas/git-hooks-nodejs/issues"
-  },
-  "homepage": "https://github.com/MateusFrFreitas/git-hooks-nodejs#readme",
-  "devDependencies": {
-    "jest": "^27.5.1"
-  }
+	"name": "git-hooks-nodejs",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MateusFrFreitas/git-hooks-nodejs.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MateusFrFreitas/git-hooks-nodejs/issues"
+	},
+	"homepage": "https://github.com/MateusFrFreitas/git-hooks-nodejs#readme",
+	"devDependencies": {
+		"husky": "^4.3.8",
+		"jest": "^27.5.1",
+		"pre-commit": "^1.2.2"
+	}, 
+	"pre-commit": [
+		"test"
+	]
 }
