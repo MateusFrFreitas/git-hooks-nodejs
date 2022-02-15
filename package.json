@@ -19,10 +19,11 @@
 	"homepage": "https://github.com/MateusFrFreitas/git-hooks-nodejs#readme",
 	"devDependencies": {
 		"husky": "^4.3.8",
-		"jest": "^27.5.1",
-		"pre-commit": "^1.2.2"
-	}, 
-	"pre-commit": [
-		"test"
-	]
+		"jest": "^27.5.1"
+	},
+	"husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  }
 }
